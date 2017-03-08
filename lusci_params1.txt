@@ -1,0 +1,7 @@
+input_file	'/home/cyrano/LuSci/Hanle/obs_05042015.lvm'
+output_folder	'/home/cyrano/LuSci/cov_outputs/automated_new/2015_04_Apr/'
+File index	1
+IDL_parameters	'/home/cyrano/LuSci/lusci_hanle.par'
+Dark		'/home/cyrano/LuSci/Hanle/dark_05042015.lvm'
+Sky		''
+Samples		500

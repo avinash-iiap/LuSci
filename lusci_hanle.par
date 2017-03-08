@@ -1,0 +1,21 @@
+{lusci,
+ long: 78.9642,             ; longitude deg., Hanle
+ lat:  32.7794,              ; latitude in degrees, Hanle
+detdiam:  0.01,            ; detector diameter, m
+detpos:  [0,0.19,0.23,0.25,0.28,0.40], ; detector position, m [CTIO]
+amplcoef: [46.,46, 46,46,46],  ; AC/AC amplification
+texp:  0.002,                ;exposure time, s
+basetime:  5,                ; data segment length, s
+accumtime: 60,               ; acumulation time, s
+skytime:  -1,              ; Time to wait after sky, s (-1 to cancel)
+fhigh:     500,               ; high cutoff frequency
+flow:      0,                ; low cutoff frequency 
+ datadir:  'tololo/',           ; data directory with / 
+resfile:  'RES',            ; results file name
+threshold1:   0.05,           ; Max SKY/DC fraction
+threshold2:   0.02,           ; Max relative DC fluctuations 
+threshold3:   0.02,           ; Max. DC-SKY fluctuations relative to fit
+threshold4:   4,             ; Min. number of points/minute
+zint:    [3.,12,48,192]}    ;   ranges for allrest centers
+
+

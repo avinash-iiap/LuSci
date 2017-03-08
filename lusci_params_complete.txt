@@ -1,0 +1,6 @@
+input_folder	'/home/cyrano/LuSci/Hanle/'
+output_folder	'/home/cyrano/LuSci/cov_outputs/automated_new/'
+final_analysis	'/home/cyrano/LuSci/final_analysis_new1/'
+IDL_parameters	'/home/cyrano/LuSci/lusci_hanle.par'
+Samples		500
+
