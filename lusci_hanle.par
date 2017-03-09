@@ -10,7 +10,6 @@ accumtime: 60,               ; acumulation time, s
 skytime:  -1,              ; Time to wait after sky, s (-1 to cancel)
 fhigh:     500,               ; high cutoff frequency
 flow:      0,                ; low cutoff frequency 
- datadir:  'tololo/',           ; data directory with / 
 resfile:  'RES',            ; results file name
 threshold1:   0.05,           ; Max SKY/DC fraction
 threshold2:   0.02,           ; Max relative DC fluctuations 
