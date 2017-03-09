@@ -40,16 +40,17 @@ The campaign mode wraps around the stand-alone mode. The campaign mode accepts t
 - Observation files - obs_ddmmyyyy.lvm
 - Dark files - dark_ddmmyyyy.lvm
 - Sky background files - sky_ddmmyyyy.lvm
+
 where the 'ddmmyyyy' is replaced by the observation date. The LVM files *of each night* should be compressed into a single zip archive and all the zip archives of the different nights (for which the observation was taken) placed in the input folder (one of the parameters to **lusci_params_complete.txt**). In a single zip archive, there should compulsarily be an observation file but the dark and sky files are optional. There is no naming convention for the zip files but there should be no other files in the input folder. This format is not applicable for stand-alone mode where the .lvm files should be used as is. For an example of how an input file should be for the campaign mode, download this [file](https://drive.google.com/open?id=0BzDZNA262Mq0Y2dyZ2NQTEU1Vmc). This is a sample observation file taken from Hanle for a few minutes on 18/09/2013.
 **NOTE**: Multiple observation files on a single night are not allowed in campaign mode unlike the stand-alone mode (where multiple output files can be changed with the File_index parameter in **lusci_params1.txt**). Combine the LVM files in ascending order of their time of observation and create a new LVM file (an automated code for combining LVM files will be posted soon).
 
 ### Input parameter file
 **lusci_params_complete.txt** contains the input parameters used to point to the folder where all input files are located and to the folder where the output results are to be generated.
-1. input_folder	- the full path of the folder where the compressed zip archive(s) of the input LVM files are located.
-2. output_folder	- the full path of the folder where the output .cov, .tp and the results for each night will be generated and stored in folders named after each month.
-3. final_analysis	- the full path of the folder where the full campaign analysis results are stored. 
-4. IDL_parameters	- Same as in lusci_params1.txt
-5. Samples	- Same as in lusci_params1.txt
+ 1. input_folder	- the full path of the folder where the compressed zip archive(s) of the input LVM files are located.
+ 2. output_folder	- the full path of the folder where the output .cov, .tp and the results for each night will be generated and stored in folders named after each month.
+ 3. final_analysis	- the full path of the folder where the full campaign analysis results are stored. 
+ 4. IDL_parameters	- Same as in lusci_params1.txt
+ 5. Samples	- Same as in lusci_params1.txt
 
 **lusci_run_complete.sh** clears the output folders, finds the number of zip files, extracts each zip file iteratively and runs the **lusci_run1.sh** for each night of observation. It deletes each LVM file after processing is done for that night. After all the files of the campaign are processed, **Main_code/compiled_seeing.m** is invoked to generate the final campaign results in the folder specified by 'final_analysis' parameter in **lusci_params_complete.txt**. See the header comments in **compiled_seeing.m** to understand the nature of the results.
 
