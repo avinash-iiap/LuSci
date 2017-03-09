@@ -1,5 +1,9 @@
 # Lunar Scintillometer
-This code repository is the core software pipeline for analyzing the RAW data coming from a six-channel lunar scintillometer as described in the paper, 'Development of a Lunar Scintillometer as part of the National Large Optical Telescope Site Survey' which is submitted to the journal, 'Experimental Astronomy'. The pipeline has the LabView code for acquiring data from the instrument, and an automated bash script to analyze the RAW voltage data and generate the atmospheric seeing values. The code is divided into two parts:
+This code repository is the core software pipeline for analyzing the RAW data coming from a six-channel lunar scintillometer as described in the paper, 'Development of a Lunar Scintillometer as part of the National Large Optical Telescope Site Survey' which is submitted to the journal, 'Experimental Astronomy'. The pipeline has the LabView code for acquiring data from the instrument, and an automated bash script to analyze the RAW voltage data and generate the atmospheric seeing values. 
+
+**LuSci DAQ.vi** is the LabView package used to acquire data from the NI USB-6210 DAQ. Make sure the DAQ device is connected to the USB port before opening this file. It consists of a simple six-channel acquisition block set to run at 500 Hz and a power spectrum analysis block to see whether any EMI interference is present in the incoming data (in real-time). 
+
+The software pipeline is divided into two parts:
 
 1. A **stand-alone code** which processes a single LVM file from a single night and creates the vertical seeing distribution for the same.
 
