@@ -56,6 +56,6 @@ where the 'ddmmyyyy' is replaced by the observation date. The LVM files *of each
 
 The code is licensed under The GNU General Public License v3.0, and can be freely modified and distributed. I acknowledge [M. A. Hopcroft](https://in.mathworks.com/matlabcentral/profile/authors/633845-m-a-hopcroft) for the MATLAB package which imports LabView standard LVM files.
 
-Author Name : Avinash Surendran
-Affiliation : Indian Institute of Astrophysics, Bangalore, India
+Author Name : Avinash Surendran <br />
+Affiliation : Indian Institute of Astrophysics, Bangalore, India <br />
 Email : asurendran@iiap.res.in
