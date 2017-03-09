@@ -3,7 +3,7 @@
  lat:  32.7794,              ; latitude in degrees, Hanle
 detdiam:  0.01,            ; detector diameter, m
 detpos:  [0,0.19,0.23,0.25,0.28,0.40], ; detector position, m [CTIO]
-amplcoef: [46.,46, 46,46,46],  ; AC/AC amplification
+amplcoef: [46.,46, 46,46,46],  ; AC/DC amplification
 texp:  0.002,                ;exposure time, s
 basetime:  5,                ; data segment length, s
 accumtime: 60,               ; acumulation time, s
